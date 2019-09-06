@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="timer">
+
+        <p id="time">
+            <input class="hours" type="number" min="0" max="59"><i class="medium material-icons">more_vert</i>
+            <input class="minutes" type="number" min="0" max="59"><i class="medium material-icons">more_vert</i>
+            <input class="seconds" type="number" min="0" max="59">
+        </p>
+
+        <p id="buttons">
+            <i class="medium material-icons" onclick="startTimer()">play_arrow</i>
+            <i class="medium material-icons" onclick="stopTimer()">pause</i>
+            <i class="medium material-icons" onclick="resetTimer()">replay</i>
+        </p>
+
+        <div id="timeUp">
+            <h1>TIME'S UP</h1>
+            <img src="time's-up.gif" alt="Time's Up GIF">
+            <i class="medium material-icons" onclick="resetTimer()">replay</i>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+*:hover {
+    cursor: default;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#timer {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin-left: 5em;
+    background-color: #634427ab;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 17px #1e150e;
+}
+
+#time {
+    color: #1e150e;
+    border: 5px solid #1e150e;
+    padding: 1em 0em;
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+input {
+    color: #1e150e;
+    width: fit-content;
+    text-align: center;
+    font-size: 2.2em;
+    border: none;
+    background-color: transparent;
+    align-self: center;
+}
+
+#timeUp {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1e150e;
+}
+
+h1 {
+    color: #f6bc0d;
+    animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#buttons {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#buttons i, #timeUp i {
+    color: #1e150e;
+    padding: 0.5em;
+    border: 3px solid #1e150e;
+    border-radius: 100%;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    #timer {
+        padding: 2em 1em;
+        margin-left: 3em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #timer {
+        padding: 2em 0.8em;
+        margin-left: 2em;
+    }
+    input {
+        font-size: 2em;
+    }
+    img {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #timer {
+        padding: 2em 0.7em;
+        margin-left: 1.7em;
+    }
+    #time {
+        border: 4px solid #1e150e;
+    }
+    input {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #timer {
+        padding: 2em 0.6em;
+        margin-left: 1.5em;
+    }
+    input {
+        font-size: 1.4em;
+    }
+    img {
+        height: 200px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #timer {
+        padding: 2em 0.5em;
+        margin-left: 1em;
+    }
+    #time {
+        border: 3px solid #1e150e;
+    }
+    input {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    img {
+        height: 180px;
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #timer {
+        margin-left: 0.8em;
+    }
+    input {
+        font-size: 0.8em;
+    }
+    img {
+        height: 150px;
+        width: 150px;
+    }
+}
